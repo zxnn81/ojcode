@@ -16,3 +16,4 @@ using namespace std;
 int hammingWeight(uint32_t n);
 vector<int> majorityElementII(vector<int>& nums);
 vector<string> summaryRanges(vector<int>& nums);
+int calculate(string s) ;
