@@ -8,7 +8,11 @@ int main()
 
 	int a[3]={0,1,2};
 	vector<int> test(a,a+3);
-	string str="3+2*2";
+	ifstream file;
+//	file.open("a.txt");
+	string str="2-1-1";
+//	string str;
+//	file>>str;
 	int res=calculate(str);
 	cout<<res;
 
@@ -16,7 +20,7 @@ int main()
 //	{
 //		printf("%s    ",res[i].c_str());
 //}
-	printf("按任意键结束");
+	printf("\n按任意键结束");
 	getchar();
 	return 0;
 }
