@@ -1,59 +1,54 @@
 #include "main.h"
 
-struct tspair 
-{
-	int val;
-	int idx;
-};
-bool operator < (const tspair &a,const tspair &b)
-{
-	if(a.val<b.val)
-		return true;
-	else
-		return false;
-}
-bool operator > (const tspair &a,const tspair &b)
-{
-	if(a.val>b.val)
-		return true;
-	else
-		return false;
-}
 vector<int> twoSum(vector<int>& nums, int target)
 {
-	
-	tspair *tmp;
-	int fi,si;
-	set<tspair>::iterator pos;
-	tmp=new tspair[nums.size()];
+	int *tmp;
+	int fi=-1,si=-1;
+	set<int>::iterator pos;
+	tmp=new int[nums.size()];
 	for(int i=0;i<nums.size();i++)
 	{
-		tmp[i].val=target-nums[i];
-		tmp[i].idx=i;
+		tmp[i]=target-nums[i];
 	}
-	set<tspair> tmph;
+	set<int> tmph;
 	tmph.insert(tmp,tmp+nums.size());
 	for(int i=0;i<nums.size();i++)
 	{
-		fi=i;
-		tspair buf;
-		buf.val=nums[i];
-		pos=tmph.find(buf);
+		si=-1;
+		fi=-1;
+		pos=tmph.find(nums[i]);
 		if (pos!=tmph.end())
 		{
-			si=(*pos).idx;
-			break;
+			fi=i;
+			for(int i=0;i<nums.size();i++)
+			{
+				if(nums[fi]==tmp[i]&&fi!=i)
+				{
+					si=i;
+					break;
+				}
+			}
+			if(si==-1)
+				continue;
+			else
+				break;
 		}	
 	}
+
 	vector<int> res;
 	if(fi<si)
 	{
-		res.push_back(fi);
-		res.push_back(si);
+		res.push_back(fi+1);
+		res.push_back(si+1);
 	}else
 	{
-		res.push_back(si);
-		res.push_back(fi);
+		res.push_back(si+1);
+		res.push_back(fi+1);
 	}
 	return res;
 }
+
+//vector<int> twoSum(vector<int>& nums, int target)
+//{
+
+//}
