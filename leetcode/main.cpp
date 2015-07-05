@@ -6,7 +6,7 @@ int main()
 ///	int a=hammingWeight(001101111001);
 //	printf("%d",a);
 
-	int a[3]={3,2,4};
+/*	int a[3]={3,2,4};
 	int ll1[2]={9,9};
 	int ll2[1]={1};
 	ListNode*l1=NULL,*l2=NULL;
@@ -37,14 +37,14 @@ int main()
 			tmp->next=end;
 		}
 	}
+	*/
 
-
-	ListNode *res=addTwoNumbers(l1,  l2);
+	/*ListNode *res=addTwoNumbers(l1,  l2);
 	while(res!=NULL)
 	{
 		cout<<res->val;
 		res=res->next;
-	}
+	}*/
 	/*vector<int> test(a,a+3);
 	ifstream file;
 //	file.open("a.txt");
@@ -59,6 +59,10 @@ int main()
 //	{
 //		printf("%s    ",res[i].c_str());
 //}
+
+	
+	int a=lengthOfLongestSubstring("hh;'gh/ofa'o;egg/.a*gehhybah");
+	cout<<a;
 	printf("\n按任意键结束");
 	getchar();
 	return 0;

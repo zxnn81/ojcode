@@ -66,6 +66,7 @@
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="BasicCalculatorII.cpp" />
     <ClCompile Include="HammingWeight.cpp" />
+    <ClCompile Include="LongestSubstringWithoutRepeatingCharacters.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MajorityElementII.cpp" />
     <ClCompile Include="SummaryRanges.cpp" />

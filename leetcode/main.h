@@ -27,3 +27,4 @@ struct ListNode {
 	ListNode(int x) : val(x), next(NULL) {}
 };
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+int lengthOfLongestSubstring(string s);
