@@ -35,5 +35,11 @@
     <ClCompile Include="SummaryRanges.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="AddTwoNumbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
