@@ -61,8 +61,20 @@ int main()
 //}
 
 	
-	int a=lengthOfLongestSubstring("hh;'gh/ofa'o;egg/.a*gehhybah");
-	cout<<a;
+	//int a=lengthOfLongestSubstring("hh;'gh/ofa'o;egg/.a*gehhybah");
+	//cout<<a;
+
+
+	int a[1]={3};
+	int b[3]={1,3,4};
+
+	vector<int> va(a,a+1);
+	vector<int> vb(b,b+3);
+
+	double res=findMedianSortedArrays(va,vb);
+	cout<<res;
+
+
 	printf("\n按任意键结束");
 	getchar();
 	return 0;

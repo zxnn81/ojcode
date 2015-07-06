@@ -69,6 +69,7 @@
     <ClCompile Include="LongestSubstringWithoutRepeatingCharacters.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MajorityElementII.cpp" />
+    <ClCompile Include="MedianofTwoSortedArrays.cpp" />
     <ClCompile Include="SummaryRanges.cpp" />
     <ClCompile Include="TwoSum.cpp" />
   </ItemGroup>

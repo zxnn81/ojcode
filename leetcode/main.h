@@ -10,6 +10,8 @@
 #include <fstream>
 #include <stack>
 #include <set>
+#include <queue>
+#include <iterator>
 
 using namespace std;
 
@@ -28,3 +30,4 @@ struct ListNode {
 };
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
 int lengthOfLongestSubstring(string s);
+double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2);
